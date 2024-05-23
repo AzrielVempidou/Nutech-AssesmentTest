@@ -11,7 +11,7 @@
       "first_name": "Jane",
       "last_name": "Smith",
       "password": "anothersecurepassword456",
-      "profile_image": "://yoururhttpslapi.com/profile.jpeg"
+      "profile_image": "https://yoururhttpslapi.com/profile.jpeg"
     },
     {
       "email": "alice.jones@example.com",
