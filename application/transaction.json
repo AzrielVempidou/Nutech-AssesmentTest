@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "invoice_number": "INV20240520-001",
+    "serviceId": 2,
+    "transaction_type": "PAYMENT",
+    "total_amount": 15000,
+    "membershipId": 1
+  },
+  {
+    "id": 2,
+    "invoice_number": "INV20240520-002",
+    "serviceId": 1,
+    "transaction_type": "PAYMENT",
+    "total_amount": 15000,
+    "membershipId": 3
+  }
+]

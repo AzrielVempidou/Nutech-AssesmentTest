@@ -1,0 +1,24 @@
+[
+    {
+      "email": "john.doe@example.com",
+      "first_name": "John",
+      "last_name": "Doe",
+      "password": "securepassword123",
+      "profile_image": "https://yoururlapi.com/profile.jpeg"
+    },
+    {
+      "email": "jane.smith@example.com",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "password": "anothersecurepassword456",
+      "profile_image": "https://yoururhttpslapi.com/profile.jpeg"
+    },
+    {
+      "email": "alice.jones@example.com",
+      "first_name": "Alice",
+      "last_name": "Jones",
+      "password": "yetanothersecurepassword789",
+      "profile_image": "https://yoururlapi.com/profile.jpeg"
+    }
+  ]
+

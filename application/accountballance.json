@@ -1,0 +1,14 @@
+[
+  {
+    "membershipId": 1,
+    "account_balance": 500000
+  },
+  {
+    "membershipId": 2,
+    "account_balance": 500500
+  },
+  {
+    "membershipId": 3,
+    "account_balance": 700000
+  }
+]
