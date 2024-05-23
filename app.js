@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 app.get('/', async (req, res) => {
-  console.log(`Example app listening on port ${port}`)
+  res.send(`Example app listening on port ${port}`)
 })
 
 app.use(router)
