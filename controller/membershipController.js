@@ -1,4 +1,4 @@
-const { Membership } = require("../models");
+const { membership } = require("../models");
 const { comparePass } = require("../helpers/bcrypt")
 const { generateToken } = require("../helpers/jwt")
 
@@ -6,7 +6,7 @@ module.exports = class membershipController{
   static async register(req,res,next){
     try {
       const { email, password, first_name, last_name } = req.body
-      const customer = await Membership.create({ email, password, first_name, last_name })
+      const customer = await membership.create({ email, password, first_name, last_name })
       res.status(201).json({
         "status": 0,
         "message": "Registrasi berhasil silahkan login",
@@ -19,7 +19,7 @@ module.exports = class membershipController{
   static async login(req,res,next){
     try {      
       const {email, password} = req.body
-      const customer = await Membership.findOne({
+      const customer = await membership.findOne({
         where:{
           email
         }
@@ -62,7 +62,7 @@ module.exports = class membershipController{
   }
   static async getProfile(req,res,next){
     try {
-      const data = await Membership.findByPk(req.user.id)
+      const data = await membership.findByPk(req.user.id)
 
       res.status(200).json(
         {
@@ -85,7 +85,7 @@ module.exports = class membershipController{
       
       const {first_name, last_name} = req.body
       console.log(req.body, "<<<", req.user.id );
-      const findProfileById = await Membership.findByPk(req.user.id)
+      const findProfileById = await membership.findByPk(req.user.id)
   
       if (!findProfileById) {
         throw { name: "NotFound", message : "Membership Not found"}
@@ -114,7 +114,7 @@ module.exports = class membershipController{
       
       const { profile_image } = req.body
       // console.log(req.body, "<<<");
-      const findProfileById = await Membership.findByPk(req.user.id)
+      const findProfileById = await membership.findByPk(req.user.id)
   
       if (!findProfileById) {
         throw { name: "NotFound", message : "Membership Not found"}
